@@ -1,0 +1,47 @@
+{
+  "name": "performo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "braces": "^3.0.3",
+    "detect-libc": "^1.0.3",
+    "enhanced-resolve": "^5.18.4",
+    "fill-range": "^7.1.1",
+    "graceful-fs": "^4.2.11",
+    "is-extglob": "^2.1.1",
+    "is-glob": "^4.0.3",
+    "is-number": "^7.0.0",
+    "jiti": "^2.6.1",
+    "lightningcss": "^1.30.2",
+    "magic-string": "^0.30.21",
+    "micromatch": "^4.0.8",
+    "mri": "^1.2.0",
+    "node-addon-api": "^7.1.1",
+    "picocolors": "^1.1.1",
+    "picomatch": "^2.3.1",
+    "source-map-js": "^1.2.1",
+    "tapable": "^2.3.0",
+    "to-regex-range": "^5.0.1"
+  },
+  "devDependencies": {
+    "tailwindcss": "^4.1.18"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch",
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebastianstary/performo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/sebastianstary/performo/issues"
+  },
+  "homepage": "https://github.com/sebastianstary/performo#readme"
+}
