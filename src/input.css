@@ -10,4 +10,17 @@
   
   /* Definice stínu */
   --shadow-glow: 0 0 20px rgba(255, 61, 0, 0.5);
+
+  --animate-slow-pulse: slow-pulse 5s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+
+  /* 2. Definujeme chování (keyframes) */
+  @keyframes slow-pulse {
+    0%, 100% { 
+      opacity: 0.3; /* Plně viditelné */
+    }
+    50% { 
+      opacity: 0.2; /* TADY nastavíš intenzitu (0.1 = zmizí úplně, 0.8 = jen jemně pohasne) */
+    }
+  }
+
 }

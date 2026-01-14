@@ -24,20 +24,21 @@
 
 <body class="bg-performo-dark text-white font-sans antialiased selection:bg-performo-orange selection:text-white">
 
+     <!-- Menu -->
     <nav class="fixed w-full z-50 bg-performo-dark/90 backdrop-blur-md border-b border-white/10">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
 
             <a href="#" class="p-2 rounded-2xl flex items-center gap-3 group">
-                <img src="img/logo.webp" alt="Performo" class="md:w-16 md:h-16 w-12 h-12 rounded-full shadow-md border-2 border-white/20 select-none" draggable="false">
+                <img src="img/logo.webp" alt="Performo" class="md:w-16 md:h-16 w-12 h-12 rounded-full shadow-md border-2 border-performo-orange/50 select-none" draggable="false">
                 <div class="text-xl font-bold tracking-wide">PERFORMO</div>
             </a>
 
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#problem" class="hover:text-performo-orange transition-colors px-3 py-2 rounded-md text-sm font-medium">Realita</a>
-                        <a href="#reseni" class="hover:text-performo-orange transition-colors px-3 py-2 rounded-md text-sm font-medium">Jak to funguje</a>
-                        <a href="#kontakt" class="bg-performo-orange hover:bg-orange-600 text-white px-5 py-2 rounded-full text-sm font-bold transition-transform hover:scale-105">Chci chránit příjem</a>
+                        <a href="#problem" class="hover:text-performo-orange transition-colors px-3 py-2 rounded-md text-lg font-medium">Rizika</a>
+                        <a href="#reseni" class="hover:text-performo-orange transition-colors px-3 py-2 rounded-md text-lg font-medium">Co nabízíme</a>
+                        <a href="#kontakt" class="bg-performo-orange hover:bg-orange-600 text-white px-5 py-2 rounded-full text-sm font-bold transition-transform transition-duration-300 hover:scale-105">Chci chránit příjem</a>
                     </div>
                 </div>
                 <div class="-mr-2 flex md:hidden">
@@ -50,66 +51,81 @@
         </div>
     </nav>
 
-    <header id="home" class="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+     <!-- Hero -->
+    <header id="home" class="relative pt-36 pb-20 lg:pt-64 lg:pb-48 overflow-hidden">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center lg:text-left">
             <div class="lg:w-2/3">
                 <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight leading-tight mb-6">
                     VE FORMĚ <br>
                     <span class="text-transparent bg-clip-text bg-linear-to-r from-performo-orange to-orange-400">
-                        I MIMO HŘIŠTĚ.
+                        I MIMO HŘIŠTĚ
                     </span>
                 </h1>
-                <p class="mt-4 md:text-xl text-lg text-gray-300 max-w-2xl mx-auto lg:mx-0">
+                <p class="mt-4 md:text-xl text-lg text-gray-300 max-w-2xl mx-auto lg:mx-0 pl-3">
                     Zranění ti vezme hru. <br> Nesmí ti vzít příjem. <br>
                     Finanční krytí pro profesionály i výkonnostní amatéry.
                 </p>
                 <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                    <a href="#kontakt" class="px-8 py-4 bg-performo-orange hover:bg-orange-600 text-white font-bold rounded text-lg transition-all shadow-[0_0_20px_rgba(255,61,0,0.3)] hover:shadow-[0_0_30px_rgba(255,61,0,0.5)] text-center">
+                    <a href="#kontakt" class="md:px-8 md:py-4 md:text-lg px-2 py-4 text-sm  bg-performo-orange hover:bg-orange-600 text-white font-bold rounded  transition-all shadow-[0_0_20px_rgba(255,61,0,0.3)] hover:shadow-[0_0_30px_rgba(255,61,0,0.5)] text-center">
                         Zjisti, jak ochránit svůj příjem
                     </a>
-                    <a href="#problem" class="px-8 py-4 border border-gray-600 hover:border-white text-gray-300 hover:text-white font-medium rounded text-lg transition-colors text-center">
+                    <a href="#problem" class="md:px-8 md:py-4 md:text-lg px-2 py-4 text-sm border bg-transparent/40 border-gray-600 hover:border-white text-gray-300 hover:text-white font-medium rounded transition-colors text-center">
                         Jaká jsou rizika?
                     </a>
                 </div>
             </div>
         </div>
-        <div class="absolute top-0 right-0 -mr-20 -mt-20 w-lg h-128 bg-performo-orange opacity-15 blur-3xl rounded-full pointer-events-none"></div>
-               <div class="absolute bottom-0 left-0 -ml-10 -mb-20 w-sm h-24 bg-performo-orange opacity-15 blur-3xl rounded-full pointer-events-none"></div>
+
+        <div class="absolute top-0 right-0 -mr-30 -mt-30 w-3xl h-192 bg-performo-orange opacity-15 blur-3xl rounded-full pointer-events-none animate-slow-pulse"></div>
+        <div class="absolute bottom-0 left-0 -ml-10 -mb-10 w-sm h-24 bg-performo-orange opacity-15 blur-3xl rounded-full pointer-events-none animate-slow-pulse"></div>
     </header>
 
-    <section id="problem" class="scroll-mt-36 py-20 bg-linear-to-r from-neutral-800 to-neutral-700 border-y border-neutral-600">
+     <!-- Problem -->
+    <section id="problem" class="md:scroll-mt-36 scroll-mt-16 py-20 bg-linear-to-r from-neutral-800 to-neutral-600 border-y border-performo-orange relative overflow-hidden shadow-2xl">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Mimo hru. <span class="text-performo-orange">Ne mimo příjem.</span></h2>
-                <p class="text-gray-400 text-xl max-w-2xl mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Mimo hru. <br> <span class="text-performo-orange">Ne mimo příjem.</span></h2>
+                <p class="text-gray-300 text-xl max-w-2xl mx-auto">
                     Sport je riziko. <br> Jeden špatný souboj může znamenat stopku na 6 měsíců.
                 </p>
             </div>
-
             <div class="grid md:grid-cols-3 gap-8 text-center">
-                <div class="p-8 rounded-2xl bg-neutral-900 border border-neutral-700 hover:border-performo-orange transition-colors duration-300">
-                    <div class="text-5xl mb-4">🤕</div>
+                <div class="p-8 rounded-2xl bg-neutral-900 border border-neutral-700 hover:border-performo-orange transition-colors duration-300 group">
+                    <div class=" text-5xl mb-6 inline-flex items-center justify-center w-14 h-14 rounded-full group-hover:scale-110 transition-transform duration-300">
+                        🤕
+                    </div>
                     <h3 class="text-xl font-bold text-white mb-2">Zranění = Pauza</h3>
-                    <p class="text-gray-400">Žádné zápasy, žádné tréninky, stopka v kariéře.</p>
+                    <p class="text-gray-300">Žádné zápasy, žádné tréninky, stopka v kariéře.</p>
                 </div>
-                <div class="p-8 rounded-2xl bg-neutral-900 border border-neutral-700 hover:border-performo-orange transition-colors duration-300">
-                    <div class="text-5xl mb-4">📉</div>
+
+                <div class="p-8 rounded-2xl bg-neutral-900 border border-neutral-700 hover:border-performo-orange transition-colors duration-300 group">
+                    <div class=" text-5xl mb-6 inline-flex items-center justify-center w-14 h-14 rounded-full group-hover:scale-110 transition-transform duration-300">
+                        📉
+                    </div>
                     <h3 class="text-xl font-bold text-white mb-2">Pauza = Nula příjmů</h3>
-                    <p class="text-gray-400">Prémie a výkonnostní složky mzdy zmizí ze dne na den.</p>
+                    <p class="text-gray-300">Prémie a výkonnostní složky mzdy zmizí ze dne na den.</p>
                 </div>
-                <div class="p-8 rounded-2xl bg-neutral-900 border border-neutral-700 hover:border-performo-orange transition-colors duration-300">
-                    <div class="text-5xl mb-4">💸</div>
+
+                <div class="p-8 rounded-2xl bg-neutral-900 border border-neutral-700 hover:border-performo-orange transition-colors duration-300 group">
+                    <div class=" text-5xl mb-6 inline-flex items-center justify-center w-14 h-14 rounded-full group-hover:scale-110 transition-transform duration-300">
+                        💸
+                    </div>
                     <h3 class="text-xl font-bold text-white mb-2">Náklady pokračují</h3>
-                    <p class="text-gray-400">Nájem, jídlo a leasing na auto nepočkají, až se uzdravíš.</p>
+                    <p class="text-gray-300">Nájem, jídlo a leasing na auto nepočkají, až se uzdravíš.</p>
                 </div>
             </div>
+            
         </div>
+            <div class="absolute top-0 right-0 -mr-20 -mt-20 w-48 h-48 bg-performo-orange opacity-15 blur-3xl rounded-full pointer-events-none animate-slow-pulse"></div>
+            <div class="absolute bottom-0 right-0 -mr-10 -mb-20 w-sm h-24 bg-performo-orange opacity-15 blur-3xl rounded-full pointer-events-none animate-slow-pulse"></div>
+            <div class="absolute bottom-0 left-0 -ml-10 -mb-20 w-sm h-24 bg-performo-orange opacity-15 blur-3xl rounded-full pointer-events-none animate-slow-pulse"></div>
     </section>
 
-    <section id="reseni" class="scroll-mt-36 py-20 relative">
+     <!-- Nabízíme -->
+    <section id="reseni" class="md:scroll-mt-36 scroll-mt-16 py-20 relative border-y border-performo-orange">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="lg:text-center mb-16">
-                <h2 class="text-base text-performo-orange font-semibold tracking-wide uppercase">Co nabízí Performo</h2>
+                <h2 class="text-lg text-performo-orange font-semibold tracking-wide uppercase">Co nabízí Performo</h2>
                 <p class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
                     Finance jako součást sportovní přípravy
                 </p>
@@ -155,35 +171,51 @@
         </div>
     </section>
 
-    <section class="scroll-mt-36 py-20 relative bg-linear-to-r from-neutral-800 to-neutral-700 border-y border-neutral-600">
+     <!-- Pro koho -->
+    <section class="scroll-mt-36 py-20 bg-linear-to-r from-neutral-800 to-neutral-600 border-t border-performo-orange relative overflow-hidden">
         <div class="max-w-4xl mx-auto px-4 text-center">
-            <h2 class="text-2xl font-bold mb-6">Pro koho je PERFORMO?</h2>
+            <h2 class="text-3xl font-bold mb-6">Pro koho je PERFORMO?</h2>
             <ul class="text-left md:text-center space-y-4 text-gray-300">
                 <li class="flex items-center md:justify-center gap-3">
-                    <span class="text-performo-orange">✓</span> Fotbalisté ve věku 18–35 let 
+                    <span class="text-performo-orange text-lg">✓</span><p class="text-lg">Fotbalisté ve věku 18–35 let </p> 
                 </li>
                 <li class="flex items-center md:justify-center gap-3">
-                    <span class="text-performo-orange">✓</span> Poloprofesionálové a výkonnostní amatéři 
+                    <span class="text-performo-orange text-lg">✓</span><p class="text-lg">Poloprofesionálové a výkonnostní amatéři </p>
                 </li>
                 <li class="flex items-center md:justify-center gap-3">
-                    <span class="text-performo-orange">✓</span> Všichni, jejichž příjem závisí na smlouvách a prémiích 
+                    <span class="text-performo-orange text-lg">✓</span><p class="text-lg">Všichni, jejichž příjem závisí na smlouvách a prémiích </p>
                 </li>
             </ul>
         </div>
-
+            <div class="absolute top-0 right-0 -mr-20 -mt-20 w-48 h-48 bg-performo-orange opacity-15 blur-3xl rounded-full pointer-events-none animate-slow-pulse"></div>
+            <div class="absolute bottom-0 right-0 -mr-10 -mb-20 w-sm h-24 bg-performo-orange opacity-15 blur-3xl rounded-full pointer-events-none animate-slow-pulse"></div>
+            <div class="absolute bottom-0 left-0 -ml-10 -mb-20 w-sm h-24 bg-performo-orange opacity-15 blur-3xl rounded-full pointer-events-none animate-slow-pulse"></div>
     </section>
 
-    <section id="kontakt" class="py-16  from-neutral-800 to-neutral-700 border-y border-performo-orange">
+     <!-- Kontakt -->
+    <section id="kontakt" class="md:scroll-mt-36 scroll-mt-16 md:py-32 py-16 from-neutral-800 to-neutral-700 border-y border-performo-orange ">
         
         <div class="max-w-3xl mx-auto px-4 relative z-10 text-center">
-            <h2 class="text-3xl font-bold text-white mb-6">Nemáš plán B ?</h2>
+            <h2 class="text-4xl font-bold text-white mb-6">Nemáš plán B ?</h2>
             <p class="text-xl text-gray-400 mb-10">
-                Nečekej na první zranění. <br> Zjisti, jak ochránit svůj příjem hned teď. Žádné složité papírování, mluvíme tvou řečí.
+                Nečekej na první zranění. <br> Zjisti, jak ochránit svůj příjem hned teď. <br> Žádné složité papírování, mluvíme tvou řečí.
             </p>
             
-            <form class="max-w-md mx-auto space-y-4">
-                <input type="email" placeholder="Tvůj e-mail" class="w-full px-5 py-3 bg-neutral-800 border border-neutral-600 rounded text-white placeholder-gray-500 focus:outline-none focus:border-performo-orange focus:ring-1 focus:ring-performo-orange">
-                <button type="submit" class="w-full px-8 py-4 bg-performo-orange hover:bg-orange-600 text-white font-bold rounded text-lg transition-all shadow-lg hover:shadow-orange-700/50">
+            <form id="contact-form" class="max-w-md mx-auto space-y-4">
+                <div class="flex items-start gap-3 my-4">
+                    <input type="email" placeholder="Tvůj e-mail" class="w-full px-5 py-3 bg-neutral-800 border border-neutral-600 rounded text-white placeholder-gray-500 focus:outline-none focus:border-performo-orange focus:ring-1 focus:ring-performo-orange">
+                </div>  
+                <div class="text-sm">
+                    <input id="gdpr-consent" name="gdpr-consent" type="checkbox" class="w-5 h-5 align-middle mx-3 border-gray-300 rounded accent-performo-orange focus:ring-performo-orange cursor-pointer" required>
+                    <label for="gdpr-consent" class="font-medium text-gray-500">
+                        Souhlasím se <a href="#" onclick="openModal(event)" class="text-performo-orange hover:underline">zpracováním osobních údajů</a>.
+                    </label>
+                    <p class="text-gray-500 text-xs my-3">
+                         Vaše údaje (email) potřebujeme jen k tomu, abychom vám mohli odpovědět.
+                    </p>
+                </div>
+                   
+                <button type="submit" class="w-full px-8 py-4 mt-2 bg-performo-orange hover:bg-orange-600 text-white font-bold rounded text-lg transition-all shadow-lg hover:shadow-orange-700/50 cursor-pointer">
                     Chci nezávazné info
                 </button>
             </form>
@@ -191,7 +223,8 @@
         </div>
     </section>
 
-<footer class="bg-black pt-16 pb-8 border-t border-white/10 relative overflow-hidden">
+    <!-- Footer -->
+    <footer class="bg-black pt-16 pb-8 border-t border-white/10 relative overflow-hidden">
         <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -208,8 +241,9 @@
                         Pomáháme ti zůstat ve hře, i když tě tělo zradí.
                     </p>
                     <div class="text-xs text-gray-600">
-                        Provozovatel: Název tvé firmy s.r.o.<br>
-                        IČO: 12345678
+                        Provozovatel: Samuel Patrik Trantina<br>
+                        IČO: 24339440<br>
+                        Firma: ProsperityFS s.r.o.
                     </div>
                 </div>
 
@@ -219,17 +253,15 @@
                         <li><a href="#problem" class="hover:text-performo-orange transition-colors">Realita zranění</a></li>
                         <li><a href="#reseni" class="hover:text-performo-orange transition-colors">Jak to funguje</a></li>
                         <li><a href="#kontakt" class="hover:text-performo-orange transition-colors">Konzultace zdarma</a></li>
-                        <li><a href="#" class="hover:text-performo-orange transition-colors">Časté dotazy (FAQ)</a></li>
                     </ul>
                 </div>
 
                 <div>
                     <h3 class="text-white font-bold mb-6">Informace</h3>
                     <ul class="space-y-4 text-sm text-gray-400">
-                        <li><a href="#" class="hover:text-white transition-colors">Ochrana osobních údajů</a></li>
+                        <li><a href="#" onclick="openModal(event)" class="hover:text-white transition-colors">Ochrana osobních údajů</a></li>
                         <li><a href="#" class="hover:text-white transition-colors">Obchodní podmínky</a></li>
                         <li><a href="#" class="hover:text-white transition-colors">Cookies nastavení</a></li>
-                        <li><a href="#" class="hover:text-white transition-colors">Reklamační řád</a></li>
                     </ul>
                 </div>
 
@@ -237,19 +269,19 @@
                     <h3 class="text-white font-bold mb-6">Kontakt</h3>
                     <ul class="space-y-4 text-sm text-gray-400">
                         <li class="flex items-start gap-3">
-                            <span class="text-performo-orange mt-1">📍</span>
+                            <span class="text-performo-orange mt-1">Adresa: </span>
                             <span>
                                 Sportovní ulice 123/4<br>
                                 702 00 Ostrava
                             </span>
                         </li>
                         <li class="flex items-center gap-3">
-                            <span class="text-performo-orange">✉️</span>
-                            <a href="mailto:info@performo.cz" class="hover:text-white transition-colors">info@performo.cz</a>
+                            <span class="text-performo-orange">Email: </span>
+                            <a href="mailto:samuelpatrik.trantina@prosperityfs.cz" class="hover:text-white transition-colors">samuelpatrik.trantina@prosperityfs.cz</a>
                         </li>
                         <li class="flex items-center gap-3">
-                            <span class="text-performo-orange">📞</span>
-                            <a href="tel:+420123456789" class="hover:text-white transition-colors">+420 123 456 789</a>
+                            <span class="text-performo-orange">Telefon: </span>
+                            <a href="tel:+420776048700" class="hover:text-white transition-colors">+420 776 048 700</a>
                         </li>
                     </ul>
                 </div>
@@ -275,6 +307,117 @@
             </div>
         </div>
     </footer>
+
+    <!-- GDPR Modal -->
+    <div id="gdpr-modal" class="fixed inset-0 z-50 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    
+        <div class="fixed inset-0 bg-gray-900/75 backdrop-blur-sm transition-opacity" onclick="closeModal()"></div>
+
+        <div class="fixed inset-0 z-10 w-screen overflow-y-auto">
+            <div class="flex min-h-full items-center justify-center p-4 text-center sm:p-0">
+                
+                <div class="relative transform overflow-hidden rounded-2xl bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-2xl">
+                    
+                    <div class="bg-gray-50 px-4 py-3 sm:px-6 flex justify-between items-center border-b border-gray-100">
+                        <h3 class="text-lg font-bold leading-6 text-gray-900" id="modal-title">Ochrana osobních údajů</h3>
+                        <button type="button" onclick="closeModal()" class="text-gray-400 hover:text-gray-500">
+                            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="px-4 py-5 sm:p-6 max-h-[60vh] overflow-y-auto text-sm text-gray-600 space-y-4">
+                        <p>
+                            Provozovatelem tohoto webu je <strong>[TVOJE JMÉNO / FIRMA]</strong>. Vaše soukromí bereme vážně.
+                        </p>
+
+                        <h4 class="font-bold text-gray-900">1. Proč sbíráme údaje?</h4>
+                        <p>
+                            Pokud vyplníte kontaktní formulář, zpracováváme vaše jméno a e-mail pouze za účelem 
+                            <strong>vyřízení vaší poptávky nebo dotazu</strong>. Jedná se o tzv. oprávněný zájem.
+                        </p>
+
+                        <h4 class="font-bold text-gray-900">2. Kdo data uvidí?</h4>
+                        <p>
+                            Data nikomu neprodáváme. Ke zpracování formuláře využíváme službu <strong>EmailJS</strong>, 
+                            která technicky zajišťuje doručení zprávy do naší e-mailové schránky.
+                        </p>
+
+                        <h4 class="font-bold text-gray-900">3. Jak dlouho?</h4>
+                        <p>
+                            E-maily uchováváme po dobu nezbytnou pro vyřešení komunikace, maximálně však [X] let pro případnou navazující spolupráci.
+                        </p>
+
+                        <h4 class="font-bold text-gray-900">4. Vaše práva</h4>
+                        <p>
+                            Kdykoliv nám můžete napsat na <strong>[TVŮJ EMAIL]</strong> a požádat o smazání veškeré komunikace.
+                        </p>
+                    </div>
+
+                    <div class="bg-gray-50 px-4 py-3 sm:flex sm:flex-row-reverse sm:px-6 border-t border-gray-100">
+                        <button type="button" onclick="closeModal()" class="inline-flex w-full justify-center rounded-full bg-performo-orange px-5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-600 sm:ml-3 sm:w-auto cursor-pointer">
+                            Rozumím
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="fixed inset-0 z-50 hidden" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+    <div class="fixed inset-0 bg-gray-900/75 backdrop-blur-sm transition-opacity" onclick="closeSuccessModal()"></div>
+
+        <div class="fixed inset-0 z-10 w-screen overflow-y-auto">s
+            <div class="flex min-h-full items-center justify-center p-4 text-center sm:p-0">
+                
+                <div class="relative transform overflow-hidden rounded-2xl bg-white text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-sm p-6">
+                    
+                    <div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-green-100 mb-4">
+                        <svg class="h-6 w-6 text-green-600" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                        </svg>
+                    </div>
+
+                    <div class="text-center">
+                        <h3 class="text-lg font-bold leading-6 text-gray-900" id="modal-title">Odesláno!</h3>
+                        <div class="mt-2">
+                            <p class="text-sm text-gray-500">
+                                Děkujeme za zprávu. Ozveme se vám co nejdříve.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="mt-5 sm:mt-6">
+                        <button type="button" onclick="closeSuccessModal()" class="inline-flex w-full justify-center rounded-full bg-performo-orange px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-orange-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                            Skvělé
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cookie lista -->
+    <div id="cookie-banner" class="fixed bottom-0 left-0 right-0 bg-gray-900/95 backdrop-blur-sm text-white p-4 md:p-6 z-50 hidden translate-y-full transition-transform duration-500">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
+            <div class="text-sm text-gray-300 text-center md:text-left">
+                <p>
+                    Tento web používá cookies k zajištění funkčnosti a analýze návštěvnosti. 
+                    <a href="#" onclick="openModal(event)" class="text-performo-orange hover:underline font-bold">Více informací</a>.
+                </p>
+            </div>
+            <div class="flex gap-3">
+                <button onclick="acceptCookies()" class="bg-white text-gray-900 px-6 py-2 rounded-full text-sm font-bold hover:text-white hover:bg-performo-orange transition-colors duration-300 cursor-pointer">
+                    Rozumím
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
