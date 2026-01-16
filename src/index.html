@@ -29,24 +29,35 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
 
-            <a href="#" class="p-2 rounded-2xl flex items-center gap-3 group">
-                <img src="img/logo.webp" alt="Performo" class="md:w-16 md:h-16 w-12 h-12 rounded-full shadow-md border-2 border-performo-orange/50 select-none" draggable="false">
-                <div class="text-xl font-bold tracking-wide">PERFORMO</div>
-            </a>
+                <a href="#" class="p-2 rounded-2xl flex items-center gap-3 group">
+                    <img src="img/logo.webp" alt="Performo" class="md:w-16 md:h-16 w-12 h-12 rounded-full shadow-md border-2 border-performo-orange/50 select-none" draggable="false">
+                    <div class="text-xl font-bold tracking-wide text-white">PERFORMO</div>
+                </a>
 
                 <div class="hidden md:block">
                     <div class="ml-10 flex items-baseline space-x-8">
-                        <a href="#problem" class="hover:text-performo-orange transition-colors px-3 py-2 rounded-md text-lg font-medium">Rizika</a>
-                        <a href="#reseni" class="hover:text-performo-orange transition-colors px-3 py-2 rounded-md text-lg font-medium">Co nabízíme</a>
+                        <a href="#problem" class="text-gray-300 hover:text-performo-orange transition-colors px-3 py-2 rounded-md text-lg font-medium">Rizika</a>
+                        <a href="#reseni" class="text-gray-300 hover:text-performo-orange transition-colors px-3 py-2 rounded-md text-lg font-medium">Co nabízíme</a>
                         <a href="#kontakt" class="bg-performo-orange hover:bg-orange-600 text-white px-5 py-2 rounded-full text-sm font-bold transition-transform transition-duration-300 hover:scale-105">Chci chránit příjem</a>
                     </div>
                 </div>
+
                 <div class="-mr-2 flex md:hidden">
-                    <button type="button" class="text-gray-400 hover:text-white p-2">
+                    <button type="button" onclick="toggleMenu()" class="text-gray-400 hover:text-white p-2 rounded-md focus:outline-none">
                         <span class="sr-only">Menu</span>
-                        ☰
+                        <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
                     </button>
                 </div>
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="md:hidden overflow-hidden transition-all duration-500 ease-in-out max-h-0 opacity-0 bg-performo-dark border-b border-white/10 backdrop-blur-xl">
+            <div class="px-4 pt-2 pb-6 space-y-2 flex flex-col items-center">
+                <a href="#problem" onclick="toggleMenu()" class="text-gray-300 hover:text-performo-orange hover:bg-white/5 block px-3 py-3 rounded-md text-base font-medium w-full text-center transition-colors">Rizika</a>
+                <a href="#reseni" onclick="toggleMenu()" class="text-gray-300 hover:text-performo-orange hover:bg-white/5 block px-3 py-3 rounded-md text-base font-medium w-full text-center transition-colors">Co nabízíme</a>
+                <a href="#kontakt" onclick="toggleMenu()" class="mt-4 bg-performo-orange text-white block px-5 py-3 rounded-full text-base font-bold w-full text-center shadow-lg hover:bg-orange-600 transition-colors">Chci chránit příjem</a>
             </div>
         </div>
     </nav>

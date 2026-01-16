@@ -1,4 +1,20 @@
 
+// Mobile menu toggle
+function toggleMenu() {
+    const menu = document.getElementById('mobile-menu');
+    
+    if (menu.classList.contains('max-h-0')) {
+        // OTEVŘÍT:
+        menu.classList.remove('max-h-0', 'opacity-0');
+        menu.classList.add('max-h-[500px]', 'opacity-100');
+    } else {
+        // ZAVŘÍT:
+        menu.classList.remove('max-h-[500px]', 'opacity-100');
+
+        menu.classList.add('max-h-0', 'opacity-0');
+    }
+}
+
     // Cookie banner
 document.addEventListener("DOMContentLoaded", function() {
         if (!localStorage.getItem("cookieConsent")) {
