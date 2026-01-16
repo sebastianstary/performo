@@ -1,5 +1,18 @@
 
-// Mobile menu toggle
+
+    // Cookie banner
+document.addEventListener("DOMContentLoaded", function() {
+        if (!localStorage.getItem("cookieConsent")) {
+            const banner = document.getElementById("cookie-banner");
+            // Odstraníme hidden a po chvilce vyjedeme nahoru (animace)
+            banner.classList.remove("hidden");
+            setTimeout(() => {
+                banner.classList.remove("translate-y-full");
+            }, 100);
+        }
+    });
+
+    // Mobile menu toggle
 function toggleMenu() {
     const menu = document.getElementById('mobile-menu');
     
@@ -14,19 +27,6 @@ function toggleMenu() {
         menu.classList.add('max-h-0', 'opacity-0');
     }
 }
-
-    // Cookie banner
-document.addEventListener("DOMContentLoaded", function() {
-        if (!localStorage.getItem("cookieConsent")) {
-            const banner = document.getElementById("cookie-banner");
-            // Odstraníme hidden a po chvilce vyjedeme nahoru (animace)
-            banner.classList.remove("hidden");
-            setTimeout(() => {
-                banner.classList.remove("translate-y-full");
-            }, 100);
-        }
-    });
-
     //Cookkie banner
 function acceptCookies() {
         localStorage.setItem("cookieConsent", "true");
