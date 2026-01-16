@@ -47,7 +47,7 @@ jobs:
           # ZMĚNA ZDE:
           # Místo './dist' dáváme tečku '.', což znamená "všechno v této složce".
           # GitHub je chytrý a sám vynechá node_modules a skryté soubory.
-          path: '.'
+          path: './src'
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
