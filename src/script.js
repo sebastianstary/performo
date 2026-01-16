@@ -1,5 +1,3 @@
-
-
     // Cookie banner
 document.addEventListener("DOMContentLoaded", function() {
         if (!localStorage.getItem("cookieConsent")) {
